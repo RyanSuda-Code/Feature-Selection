@@ -1,0 +1,82 @@
+body {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'Bitcount Grid Single', sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.feature-selection-container {
+    max-width: 900px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.feature-container {
+    background-color: white;
+    width: 350px;
+    padding: 20px;
+    border: solid 2px black;
+    border-radius: 20px;
+    position: relative;
+}
+
+.feature-container:hover {
+    box-shadow: 4px 4px 10px #f1be32, -4px -4px 10px #f1be32;
+    transform: scale(1.15);
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    border: 2px solid #f1be32;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #f1be32;
+    border-color: #d39c11;
+}
+
+input[type="checkbox"]:checked::after {
+    content: '✓';
+    color: white;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+button {
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+button:hover {
+    background-color: #f1be32;
+    box-shadow: 4px 4px 10px #f1be32, -4px -4px 10px #f1be32;
+    transform: scale(1.2);
+}
+
+/*Mobile device*/
