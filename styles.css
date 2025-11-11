@@ -5,7 +5,7 @@ body {
     align-items: center;
     text-align: center;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 h1 {
@@ -80,3 +80,25 @@ button:hover {
 }
 
 /*Mobile device*/
+@media (max-width: 600px) {
+    body {
+        padding: 30px;
+    }
+
+    h1{ 
+        font-size: 32px;
+    }
+    .feature-selection-container {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        margin: 0 auto;
+        gap: 10px;
+    }
+
+    .feature-container {
+        width: 250px;
+    }
+}
